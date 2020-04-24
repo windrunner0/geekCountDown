@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+
+<view class='name' wx:if="{{countDown}}">
+      <view class='name_right' style="margin-top:150rpx;color:#fff">距离BTC减半仅有</view>
+      <view class='name_right' style="font-size:140rpx;margin-top:20rpx;">{{day}}<text style="font-size:38rpx;">天</text> </view>
+      <view class='name_right' style="margin-top:20rpx;"><text>{{hou}}</text>：<text>{{min}}</text>：<text>{{sec}}</text></view>
+    </view>
+
+
+<view class='well_know' style="margin-top:450rpx;color:#fff">每个知情人士都需要了解比特币,因为它可能是世界上最重要的发展之一</view>
+</view>
+
+
+<view class="footbtn" >
+    <button class='btn1' style="width:48%;float:left;" wx:if="{{canPhoto}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">生成海报</button>
+    <button wx:else="{{canPhoto}}" class='btn1' style="width:48%;float:left;" open-type='share'>
+        生成海报
+    </button>
+
+      
+      <button class='btn1' style="width:48%;float:right;" wx:if="{{canShare}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">分享好友</button>
+      <button wx:else="{{canShare}}" class='btn1' style="width:48%;float:right;" open-type='share' bindtap="onShareAppMessage">
+        分享好友
+      </button>
+ </view>

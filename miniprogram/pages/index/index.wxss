@@ -1,0 +1,99 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url("http://wx4.sinaimg.cn/large/005zDWWngy1gdfj78zto2j30rs0fmb29.jpg");
+  background-repeat:no-repeat; 
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+
+
+}
+
+
+.btn1 {
+  width: 40%;
+  margin-top: 20rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+}
+
+
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+
+
+.footbtn{
+  width: 80%;
+  align-items: center;
+  margin:auto;
+  margin-top:50rpx;
+}
+
+
+.userinfo, .uploader, .tunnel {
+  margin-top: 40rpx;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.userinfo {
+  padding-left: 120rpx;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-avatar[size] {
+  width: 100rpx;
+}
+
+
+.userinfo-avatar:after {
+  border: none;
+}
+
+.userinfo-nickname {
+  font-size: 32rpx;
+  color: #007aff;
+  background-color: white;
+  background-size: cover;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 10px;
+}
+
+.userinfo-nickname::after {
+  border: none;
+}
+
+.userinfo-nickname-wrapper {
+  flex: 1;
+}
+
+.name_right{width:100%;font-size:38rpx;color:#fff;text-align:center;}
+.name_right text{color:#fff;padding:2rpx 6rpx;}
+
+.well_know{
+  width:70%;font-size:30rpx;color:#000;text-align:left;
+}
